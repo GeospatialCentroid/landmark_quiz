@@ -16,6 +16,9 @@
 
 
     <script src="js/plugins/leaflet/leaflet.js" ></script>
+
+     <script src="js/plugins/leaflet/leaflet-heat.js" ></script>
+
     <script src="js/index.js"></script>
   </head>
   <body>
@@ -28,7 +31,6 @@
 
 <div class="container mt-5">
   <div class="row">
-
     <div id ="sections"></div>
   </div>
 </div>
@@ -36,23 +38,24 @@
 <div id="footer" class="mt-5 p-4 bg-dark text-white text-center">
 
 </div>
-<div class="container mt-5">
+
+<div id="sub_footer" class="container mt-5">
   <div class="row">
-  <form class="needs-validation" onsubmit="submit_form()">
+    <form class="needs-validation">
+        <div class="mb-3">
+          <label for="full_name" class="form-label">Full name</label>
+          <input type="text" class="form-control is-invalid" id="full_name"  required>
+        </div>
       <div class="mb-3">
-    <label for="full_name" class="form-label">Full name</label>
-    <input type="text" class="form-control" id="full_name" value="" required>
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control is-invalid" id="email" aria-describedby="emailHelp"  required>
+        <div id="emailHelp" class="form-text"></div>
+      </div>
+      <button type="button" class="btn btn-primary" onclick="submit_form()">Submit</button>
+    </form>
   </div>
-  <div class="mb-3">
-    <label for="email" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" value="" required>
-    <div id="emailHelp" class="form-text"></div>
-  </div>
+</div>
 
-
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-  </div></div>
-  <br/>
+<div class="mt-5 p-4 text-center" id="timer"></div>
 </body>
 </html>
