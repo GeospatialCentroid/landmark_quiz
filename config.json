@@ -1,0 +1,6 @@
+{
+"config":"https://docs.google.com/spreadsheets/d/e/2PACX-1vQ8M222mPMD9DQfvPATqFKfQMtlAFr9USGmmekISvqv9JvJ9K_iiOH22KMx4K59PEmNy5kF38450idL/pub?gid=1418369642&single=true&output=csv",
+"questions": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ8M222mPMD9DQfvPATqFKfQMtlAFr9USGmmekISvqv9JvJ9K_iiOH22KMx4K59PEmNy5kF38450idL/pub?gid=1303462612&single=true&output=csv",
+"responses":"https://docs.google.com/spreadsheets/d/e/2PACX-1vQ8M222mPMD9DQfvPATqFKfQMtlAFr9USGmmekISvqv9JvJ9K_iiOH22KMx4K59PEmNy5kF38450idL/pub?gid=906970182&single=true&output=csv",
+ "post": "https://script.google.com/macros/s/AKfycbz-a69Tfv07yk8v4HJ3ppGxe5_9MpjiI7NA-T6ojW9EH5f4RNeth1lsXuouGkTpKKg/exec"
+}

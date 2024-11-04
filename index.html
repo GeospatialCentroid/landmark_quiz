@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landmark Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/plugins/leaflet/leaflet.css"  />
+
+          <link href="js/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="js/plugins/bootstrap/js/bootstrap.bundle.min.js" ></script>
+
+       <script src="js/plugins/jquery-3.7.1.min.js" ></script>
+     <script src="js/plugins/jquery.csv.min.js" ></script>
+
+
+    <script src="js/plugins/leaflet/leaflet.js" ></script>
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+
+
+<div id="header" class="p-5 bg-primary text-white text-center">
+
+</div>
+
+
+<div class="container mt-5">
+  <div class="row">
+
+    <div id ="sections"></div>
+  </div>
+</div>
+
+<div id="footer" class="mt-5 p-4 bg-dark text-white text-center">
+
+</div>
+<div class="container mt-5">
+  <div class="row">
+  <form class="needs-validation" onsubmit="submit_form()">
+      <div class="mb-3">
+    <label for="full_name" class="form-label">Full name</label>
+    <input type="text" class="form-control" id="full_name" value="" required>
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" value="" required>
+    <div id="emailHelp" class="form-text"></div>
+  </div>
+
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+  </div></div>
+  <br/>
+</body>
+</html>
