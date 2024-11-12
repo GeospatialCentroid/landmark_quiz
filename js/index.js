@@ -78,7 +78,7 @@ process_csv = function(_data,extra){
     }else if(extra=='responses'){
         //only load the answers if the form what recently submitted
         if(answer_mode){
-            setTimeout(show_answers, 2000, data)
+            setTimeout(show_answers, 1000, data)
             setInterval(timer_countdown, 1000)
         }
     }
@@ -98,13 +98,13 @@ create_questions = function(data){
         html='<br/><br/><div class=" text-center">'
         html+='<h2>'+title+'</h2>'
         html+='<h5>'+text+'</h5>'
-        html+='<img src="'+image_url+'" alt="'+alt_text+'" width="500"  />'
+        html+='<img class="landmark_img" src="'+image_url+'" alt="'+alt_text+'" width="100%"  />'
         html+='<div id="map_'+id+'" class="map"></div>'
         html+=' </div>'
 
         $("#sections").append(html)
 
-        var map = L.map('map_'+id,{doubleClickZoom: false,}).setView([40.5747842,-105.0864732], 13);
+        var map = L.map('map_'+id,{doubleClickZoom: false,}).setView([data[q].map_center_lat,data[q].map_center_lng], data[q].map_zoom);
         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
@@ -124,7 +124,7 @@ create_questions = function(data){
     }
 }
 show_answers=function(data){
-
+    $("#alert").show()
     //sort the data by question number
     var grouped_answers={}
     for(a in data){

@@ -1,1 +1,9 @@
-.map { height: 300px; }
+.map { height: 400px; }
+
+.landmark_img{
+max-height:700px;
+object-fit: cover;
+}
+#alert{
+ display:none;
+}
